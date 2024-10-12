@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Nâng Cao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Máy Tính Nâng Cao</h1>
+        <input type="text" id="result" placeholder="Kết quả" readonly>
+        <div class="button-grid">
+            <button onclick="clearInputs()" class="operator">C</button>
+            <button onclick="memoryRecall()" class="memory">RM</button>
+            <button onclick="memoryAdd()" class="memory">M+</button>
+            <button onclick="memorySubtract()" class="memory">M-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperation('/')">/</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperation('*')">*</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperation('-')">-</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button onclick="setOperation('+')">+</button>
+            <button onclick="setOperation('sqrt')">√x</button>
+            <button onclick="setOperation('^')">x²</button>
+            <button onclick="calculate()" class="equals" style="grid-column: span 2;">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
